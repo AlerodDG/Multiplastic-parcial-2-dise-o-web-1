@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiPlastic - Productos Desechables | Diseño Web I</title>
-    <!-- Vinculación a los de estilos -->
+    <!-- aqui se vincula el css como en clase del ingeniero -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Encabezado con marca y eslogan -->
-    <header class="header">
+<!-- encabezado con logo inventao y el slogan -->
+<header class="header">
+    <div class="header-content">
         <div class="logo-container">
-            <h1>MultiPlastic</h1>
+            <img src="img/multiplastic-04.png" alt="Logo de MultiPlastic" class="logo">
             <p>Soluciones prácticas en desechables y empaques</p>
         </div>
-        <!-- Botón menú tres lineas, para pantallas pequeñas -->
+        <!-- Botón menú tres líneas, para pantallas pequeñas -->
         <button class="menu-toggle" id="menuToggle">☰</button>
-    </header>
+    </div>
+</header>
 
     <!-- Barra de navegación principal (el famoso navbar jeje) -->
     <nav class="navbar" id="navbar">
@@ -29,66 +31,72 @@
         </ul>
     </nav>
 
-    <!-- Contenido principal -->
+    <!-- contenido principal -->
     <main>
-        <!-- Sección de bienvenida -->
+        <!-- bienvenida -->
         <section id="inicio" class="hero">
             <h2>Venta de plásticos y desechables al por mayor y menor</h2>
             <p>Variedad de productos para tus fiestas, negocios y eventos</p>
             
         </section>
 
-        <!-- Catálogo de productos -->
+
+
+        <!--aca cabe recalcar que la redacción de lo que quería lo pedí a la ia pero lo modifique a mi gusto -->
+
+
+
+        <!-- productos con imagenes  -->
         <section id="productos" class="catalog-section">
             <h2>Nuestro Catálogo de Productos</h2>
             <div class="product-grid">
 
                 <!-- producto1 -->
                 <article class="product-card">
-                    <img src="https://via.placeholder.com/250x180?text=Platos+Desechables" alt="Platos desechables">
-                    <h3>Platos Plásticos y Térmicos</h3>
+                    <img src="img/platos.webp" alt="Platos desechables">
+                    <h3>Platos Plásticos</h3>
                     <p>Disponibles en presentaciones N° 6, 8 y 9. Ideales para banquetes y eventos.</p>
-                    <span class="price">$1.50 / paquete</span>
+                    <span class="price">$1.50 / Paquete de 50 unidades</span>
                 </article>
 
                 <!-- producto2 -->
                 <article class="product-card">
-                    <img src="https://via.placeholder.com/250x180?text=Vasos+Plásticos" alt="Vasos plásticos">
-                    <h3>Vasos Plásticos Transparentes</h3>
+                    <img src="img/vasos.webp" alt="Vasos plásticos">
+                    <h3>Vasos Plásticos</h3>
                     <p>Capacidades de 8oz, 12oz y 16oz. Resistentes para bebidas frías.</p>
-                    <span class="price">$1.25 / paquete</span>
+                    <span class="price">$1.25 / Paquete de 50 unidades</span>
                 </article>
 
                 <!-- producto3 -->
                 <article class="product-card">
-                    <img src="https://via.placeholder.com/250x180?text=Tenedores" alt="Tenedores plásticos">
+                    <img src="img/tenedores.jpg" alt="Tenedores plásticos">
                     <h3>Tenedores Plásticos</h3>
-                    <p>Tenedor reforzado de color blanco y transparente. Paquete de 50 unidades.</p>
-                    <span class="price">$0.85 / paquete</span>
+                    <p>Tenedor reforzado de color blanco y transparente.</p>
+                    <span class="price">$0.85 / Paquete de 50 unidades</span>
                 </article>
 
                 <!-- producto4 -->
                 <article class="product-card">
-                    <img src="https://via.placeholder.com/250x180?text=Cucharas" alt="Cucharas plásticas">
+                    <img src="img/cucharas.jpg" alt="Cucharas plásticas">
                     <h3>Cucharas Plásticas</h3>
-                    <p>Cucharas soperas y para postre. Material resistente e higiénico.</p>
-                    <span class="price">$0.85 / paquete</span>
+                    <p>Cucharas soperas y para postre. </p>
+                    <span class="price">$0.85 / Paquete de 50 unidades</span>
                 </article>
 
                 <!-- producto5 -->
                 <article class="product-card">
-                    <img src="https://via.placeholder.com/250x180?text=Pajillas" alt="Pajillas">
+                    <img src="img/popotes.jpg" alt="Popotes">
                     <h3>Pajillas / Popotes</h3>
-                    <p>Pajillas flexibles y rectas, con o sin empaque individual. Paquete de 100 u.</p>
-                    <span class="price">$0.75 / paquete</span>
+                    <p>Pajillas flexibles y rectas, color negro, blanco o transparente.</p>
+                    <span class="price">$0.75 / Paquete de 100 unidades</span>
                 </article>
 
                 <!-- producto6 -->
                 <article class="product-card">
-                    <img src="https://via.placeholder.com/250x180?text=Bolsas+Plásticas" alt="Bolsas plásticas">
+                    <img src="img/bolsas.jpg" alt="Bolsas plásticas">
                     <h3>Bolsas Plásticas Multiuso</h3>
-                    <p>Bolsas tipo camiseta y transparentes. Medidas: 8x12, 10x15 y 14x20 pulg.</p>
-                    <span class="price">$2.00 / libra</span>
+                    <p>Bolsas tipo camiseta. Medidas: 8x12, 10x15 y 14x20 pulg.</p>
+                    <span class="price">$2.00 / Paquete de 50 unidades</span>
                 </article>
 
             </div>
@@ -97,14 +105,14 @@
         <!-- info. "sobre nosotros" -->
         <section id="nosotros" class="info-section">
             <h2>Sobre Nosotros</h2>
-            <p>Somos una distribuidora de Chalatenango enfocada en abastecer a comedores, cafeterías y hogares con artículos desechables de alta resistencia y al mejor precio del mercado.</p>
+            <p>Somos una distribuidora de Chalatenango enfocada en abastecer a comedores, cafeterías y hogares con artículos desechables de alta resistencia y al mejor precio.</p>
         </section>
 
         <!-- formulario de contacto basiconn -->
         <section id="contacto" class="contact-section">
             <h2>Cotizaciones para eventos | Contacto</h2>
             <form id="contactForm" class="contact-form">
-                <label for="nombre">Nombre completo:</label>
+                <label for="nombre">Nombre y apellido:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Martínez" required>
 
                 <label for="correo">Correo electrónico:</label>

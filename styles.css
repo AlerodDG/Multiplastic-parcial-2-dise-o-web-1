@@ -12,31 +12,51 @@ body {
     line-height: 1.6;
 }
 
-/* apartir de acá pedí ayuda a la IA pero voy entendiendo mejor como funcionan las cosillas */
+
 
 
 /* 2. ENCABEZADO (HEADER) Y NAVEGACIÓN (NAV) */
 .header {
-    background-color: #0056b3;
+    background-color: #306a0d;
     color: #ffffff;
     padding: 20px;
+}
+
+/* Contenedor interno que centra el encabezado a 1100px */
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* <-- CAMBIADO AQUÍ para centrar todo el contenido */
     align-items: center;
 }
 
-.logo-container h1 {
-    font-size: 1.8rem;
+/* Contenedor del logo y eslogan en línea */
+.logo-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto respecto al logo */
+    gap: 15px;           /* Espacio de separación entre el logo y la frase */
 }
 
-.logo-container p {
-    font-size: 0.9rem;
-    opacity: 0.9;
+/* Ajustes del logo */
+.logo {
+    width: 160px;        /* Tamaño ajustable para la imagen */
+    height: auto;
 }
+
+/* Ajustes del texto/eslogan */
+.logo-container p {
+    font-size: 1.5rem;   /* Tamaño de fuente para el eslogan */
+    opacity: 0.9;
+    margin: 0;           /* Elimina márgenes por defecto */
+}
+
+
+
 
 /* Menú de navegación principal */
 .navbar {
-    background-color: #003d80;
+    background-color: #27560a;
 }
 
 .navbar ul {
@@ -79,7 +99,7 @@ body {
 }
 
 .hero h2 {
-    color: #004085;
+    color: #2a2b28;
     margin-bottom: 10px;
 }
 
@@ -92,7 +112,7 @@ body {
 .catalog-section h2, .info-section h2, .contact-section h2 {
     text-align: center;
     margin-bottom: 25px;
-    color: #0056b3;
+    color: #2a2b28;
 }
 
 /* Grid de Productos con Flexbox */
@@ -170,7 +190,7 @@ body {
 
 .contact-form button {
     width: 100%;
-    background-color: #0056b3;
+    background-color: #306a0d;
     color: white;
     border: none;
     padding: 12px;
@@ -188,7 +208,7 @@ body {
 
 /* 5. PIE DE PÁGINA (FOOTER) */
 .footer {
-    background-color: #1a252f;
+    background-color:  #2a2b28;
     color: #ffffff;
     text-align: center;
     padding: 20px;
