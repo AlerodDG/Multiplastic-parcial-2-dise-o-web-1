@@ -1,4 +1,4 @@
-/* lo de siempre (ya lo tenía antes de pedirlo a la IA*/
+/* lo basico inicial para el diseño (de la clase jaksj)*/
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,6 @@ body {
 
 
 /* 2. ENCABEZADO (HEADER) Y NAVEGACIÓN (NAV) */
-
 .header {
     background-color: #0056b3;
     color: #ffffff;
@@ -68,6 +67,7 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
 }
+
 
 
 /* 3. SECCIÓN HERO Y CONTENIDO PRINCIPAL */
@@ -142,9 +142,9 @@ body {
     font-size: 1.05rem;
 }
 
-/* --------------------------------------------------
-   4. FORMULARIO DE CONTACTO
--------------------------------------------------- */
+
+
+/* 4. FORMULARIO DE CONTACTO */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
@@ -185,6 +185,7 @@ body {
 }
 
 
+
 /* 5. PIE DE PÁGINA (FOOTER) */
 .footer {
     background-color: #1a252f;
@@ -196,8 +197,8 @@ body {
 }
 
 
-/* 6. RESPONSIVIDAD (MEDIA QUERIES) */
 
+/* 6. RESPONSIVIDAD (MEDIA QUERIES) */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Muestra el botón de hamburguesa */
