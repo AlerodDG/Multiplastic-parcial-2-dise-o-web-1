@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiPlastic - Productos Desechables | Diseño Web I</title>
+    <!-- Vinculación a los de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado con marca y eslogan -->
+    <header class="header">
+        <div class="logo-container">
+            <h1>MultiPlastic</h1>
+            <p>Soluciones prácticas en desechables y empaques</p>
+        </div>
+        <!-- Botón menú tres lineas, para pantallas pequeñas -->
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <!-- Barra de navegación principal (el famoso navbar jeje) -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Catálogo</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de bienvenida -->
+        <section id="inicio" class="hero">
+            <h2>Venta de plásticos y desechables al por mayor y menor</h2>
+            <p>Variedad de productos para tus fiestas, negocios y eventos</p>
+            
+        </section>
+
+        <!-- Catálogo de productos -->
+        <section id="productos" class="catalog-section">
+            <h2>Nuestro Catálogo de Productos</h2>
+            <div class="product-grid">
+
+                <!-- producto1 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x180?text=Platos+Desechables" alt="Platos desechables">
+                    <h3>Platos Plásticos y Térmicos</h3>
+                    <p>Disponibles en presentaciones N° 6, 8 y 9. Ideales para banquetes y eventos.</p>
+                    <span class="price">$1.50 / paquete</span>
+                </article>
+
+                <!-- producto2 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x180?text=Vasos+Plásticos" alt="Vasos plásticos">
+                    <h3>Vasos Plásticos Transparentes</h3>
+                    <p>Capacidades de 8oz, 12oz y 16oz. Resistentes para bebidas frías.</p>
+                    <span class="price">$1.25 / paquete</span>
+                </article>
+
+                <!-- producto3 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x180?text=Tenedores" alt="Tenedores plásticos">
+                    <h3>Tenedores Plásticos</h3>
+                    <p>Tenedor reforzado de color blanco y transparente. Paquete de 50 unidades.</p>
+                    <span class="price">$0.85 / paquete</span>
+                </article>
+
+                <!-- producto4 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x180?text=Cucharas" alt="Cucharas plásticas">
+                    <h3>Cucharas Plásticas</h3>
+                    <p>Cucharas soperas y para postre. Material resistente e higiénico.</p>
+                    <span class="price">$0.85 / paquete</span>
+                </article>
+
+                <!-- producto5 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x180?text=Pajillas" alt="Pajillas">
+                    <h3>Pajillas / Popotes</h3>
+                    <p>Pajillas flexibles y rectas, con o sin empaque individual. Paquete de 100 u.</p>
+                    <span class="price">$0.75 / paquete</span>
+                </article>
+
+                <!-- producto6 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x180?text=Bolsas+Plásticas" alt="Bolsas plásticas">
+                    <h3>Bolsas Plásticas Multiuso</h3>
+                    <p>Bolsas tipo camiseta y transparentes. Medidas: 8x12, 10x15 y 14x20 pulg.</p>
+                    <span class="price">$2.00 / libra</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- info. "sobre nosotros" -->
+        <section id="nosotros" class="info-section">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una distribuidora de Chalatenango enfocada en abastecer a comedores, cafeterías y hogares con artículos desechables de alta resistencia y al mejor precio del mercado.</p>
+        </section>
+
+        <!-- formulario de contacto basiconn -->
+        <section id="contacto" class="contact-section">
+            <h2>Cotizaciones para eventos | Contacto</h2>
+            <form id="contactForm" class="contact-form">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Martínez" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+                <label for="mensaje">Consulta o Pedido:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <p>&copy; 2026 MultiPlastic.SA. de SV. - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- vinculación con el script externo de JavaScript (ia) -->
+    <script src="script.js"></script>
+</body>
+</html>
