@@ -1,0 +1,228 @@
+/* lo de siempre (ya lo tenía antes de pedirlo a la IA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* apartir de acá pedí ayuda a la IA pero voy entendiendo mejor como funcionan las cosillas */
+
+
+/* 2. ENCABEZADO (HEADER) Y NAVEGACIÓN (NAV) */
+
+.header {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container h1 {
+    font-size: 1.8rem;
+}
+
+.logo-container p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Menú de navegación principal */
+.navbar {
+    background-color: #003d80;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #002b59;
+}
+
+/* Botón menú móvil (oculto en escritorio) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* 3. SECCIÓN HERO Y CONTENIDO PRINCIPAL */
+.hero {
+    background-color: #e2eec;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.hero h2 {
+    color: #004085;
+    margin-bottom: 10px;
+}
+
+.catalog-section, .info-section, .contact-section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.catalog-section h2, .info-section h2, .contact-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0056b3;
+}
+
+/* Grid de Productos con Flexbox */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #1a252f;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.05rem;
+}
+
+/* --------------------------------------------------
+   4. FORMULARIO DE CONTACTO
+-------------------------------------------------- */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #003d80;
+}
+
+
+/* 5. PIE DE PÁGINA (FOOTER) */
+.footer {
+    background-color: #1a252f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+
+/* 6. RESPONSIVIDAD (MEDIA QUERIES) */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón de hamburguesa */
+    }
+
+    .navbar {
+        display: none; /* Oculta el menú horizontal en móviles */
+        width: 100%;
+    }
+
+    /* Clase toggleda desde JavaScript para abrir el menú */
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .product-card {
+        width: 100%; /* Las tarjetas toman el ancho completo en teléfonos */
+    }
+}
